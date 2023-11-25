@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0030)http://www.em777.net/v9ty.html -->
+<html><head><title>IPV9网上体验区</title>
+<meta charset="utf-8">
+<meta content="text/html; charset=gbk" http-equiv="Content-Type">
+<meta name="GENERATOR" content="MSHTML 8.00.6001.19088">
+<meta name="ProgId" content="FrontPage.Editor.Document"><link rel="stylesheet" href="IPV9%E7%BD%91%E4%B8%8A%E4%BD%93%E9%AA%8C%E5%8C%BA_files/text.css">
+<style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+}
+.STYLE11 {
+	FONT-SIZE: 12px
+}
+.STYLE12 {
+	COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.STYLE13 {
+	COLOR: #008080; FONT-SIZE: 24px; FONT-WEIGHT: bold
+}
+.STYLE14 {
+	LINE-HEIGHT: 2; FONT-SIZE: 16px
+}
+.STYLE16 {
+	FONT-SIZE: 20px
+}
+.STYLE17 {
+	LINE-HEIGHT: 6mm; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.STYLE19 {
+	FONT-SIZE: 16px
+}
+.STYLE20 {
+	COLOR: #008080; FONT-SIZE: 26px; FONT-WEIGHT: bold
+}
+.STYLE21 {
+	FONT-SIZE: 14px
+}
+</style>
+</head>
+<body background="IPV9%E7%BD%91%E4%B8%8A%E4%BD%93%E9%AA%8C%E5%8C%BA_files/globe.htm" link="#000000" vlink="#808080">
+<p class="STYLE20" align="center">IPV9网上体验区</p>
+<p class="STYLE13" align="center">&nbsp;</p>
+<p class="STYLE17" align="left">为了使广大的用户更好的体验IPv9的应用和功能，我们开辟了IPv9网上体验区。现在普通的IPv4用户可以通过登录下面IPv4地址访问IPv9网络。欢迎大家使用IPv9体验区，并给我们提出宝贵的意见。如果您需要进一步深入了解IPv9，您可以采用安装<span lang="EN-US">IPv9的IPv4/IPv9</span>双棧路由器通过<span lang="EN-US">IPv4</span>隧道连接<span lang="EN-US">IPv9</span>网络，如在上海市长宁区也可以通过光纤网络接入<span lang="EN-US">IPv9</span>试验网络。</p>
+<p class="STYLE17">IPv9网上体验区登录地址：<a href="http://61.152.248.221:5801/" target="_blank">http://61.152.248.221:5801/</a>（请先下载并安装java runtime）</p>
+<p class="STYLE17">IPv9网上体验区登录密码：tongyong</p>
+<p class="STYLE17">您也可以使用vnc viwer来运行远程桌面登录（端口号5901）。</p>
+<p class="STYLE12 STYLE19"><a href="http://www.em777.net/v9bt.html" target="_blank">IPv9报文介绍（点击查看）</a></p>
+<p class="STYLE12 STYLE19"><a href="http://www.em777.net/v9add.html">IPv9地址介绍（点击查看）</a></p>
+<p class="STYLE11">&nbsp;</p>
+<table border="2" cellpadding="2" cellspacing="2" width="98%">
+  <tbody>
+  <tr>
+    <th scope="col">
+      <p class="STYLE16">IPv9网上体验区使用说明</p></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left"><span class="STYLE14">一.登陆<br>使用ssh进行远程登陆 
+      <br>主机61.152.248.221 端口2222<br>用户名test1 密码test1</span></div></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left"><span class="STYLE14">二.使用<br>登陆以后可以执行以下三种操作(注:初次执行命令可能提示你输入密码,只要输入test1即可)</span></div></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left"><span class="STYLE14">A.查看ipv9地址 运行sudo /root/v9cmd/ifconfig 
+      eth0 然后查看输出结果<br>以下是一个运行过程<br>[test1@localhost test1]$ sudo 
+      /root/v9cmd/ifconfig eth0<br>We trust you have received the usual lecture 
+      from the local System<br>Administrator. It usually boils down to these two 
+      things:<br>#1) Respect the privacy of others.<br>#2) Think before you 
+      type.<br>Password:<br>eth0 Link encap:Ethernet HWaddr 00:0C:29:D6:B1:3A 
+      <br>inet addr:192.168.15.204 Bcast:192.168.15.255 
+      Mask:255.255.255.0<br>inet9 addr: 4269801472[1]34351615[4275482938[/10 
+      Scope:Link<br>inet9 addr: 1000000000[6]1/32 Scope:Global<br>UP BROADCAST 
+      RUNNING MULTICAST MTU:1500 Metric:1<br>RX packets:6346 errors:0 dropped:0 
+      overruns:0 frame:0<br>TX packets:5166 errors:0 dropped:0 overruns:0 
+      carrier:0<br>collisions:0 txqueuelen:100 <br>Interrupt:10 Base 
+      address:0x1400 </span></div></th></tr>
+  <tr>
+    <th scope="col" align="left">
+      <p>B.查看ipv9 路由信息 </p>
+      <p>[test1@localhost test1]$ sudo /root/v9cmd/route -A inet9 </p>
+      <p>Kernel IPv9 routing table </p>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+        <tr>
+          <td width="277"><span class="STYLE21">Destination</span></td>
+          <td width="67"><span class="STYLE21">Flags</span></td>
+          <td width="77"><span class="STYLE21">Metric</span></td>
+          <td width="72"><span class="STYLE21">Metric</span></td>
+          <td width="82"><span class="STYLE21">Metric</span></td>
+          <td width="146"><span class="STYLE21">Metric</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">[7]1/256 </span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 lo</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">1000000000[/32</span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">256</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">3372220416[4]4[20[/224</span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">256</span></td>
+          <td><span class="STYLE21">1</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">4269801472[1]34351615[4271614226[/256</span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 lo</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">4269801472[/10 </span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">256</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">4278321152[6]1/256 </span></td>
+          <td><span class="STYLE21">UC</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">1</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">4278321152[6]1 </span></td></tr>
+        <tr>
+          <td><span class="STYLE21">4278190080[/8</span></td>
+          <td><span class="STYLE21">U</span></td>
+          <td><span class="STYLE21">256</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr>
+        <tr>
+          <td><span class="STYLE21">[8]/0</span></td>
+          <td><span class="STYLE21">UG</span></td>
+          <td><span class="STYLE21">1</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">3372220416[4]4[20[1 </span></td></tr>
+        <tr>
+          <td><span class="STYLE21">[8]/0</span></td>
+          <td><span class="STYLE21">UD</span></td>
+          <td><span class="STYLE21">256</span></td>
+          <td><span class="STYLE21">0</span></td>
+          <td><span class="STYLE21">0 eth0</span></td>
+          <td><span class="STYLE21">[8]</span></td></tr></tbody></table>
+      <p>&nbsp;</p></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left"><span class="STYLE14">C.测试icmpv9报文<br>运行sudo 
+      /root/v9cmd/ping9 -a inet9 
+      1000000000[6]2<br>然后查看输出结果,中间可以按CTRL+c中断输出.<br>以下是一个运行过程<br>[test1@localhost 
+      test1]$ sudo /root/v9cmd/ping9 -a inet9 1000000000[6]2<br>PING 
+      1000000000[6]2 (1000000000[6]2): 56 data bytes<br>64 bytes from 
+      1000000000[6]2: icmp_seq=0 ttl=64 time=0.302 ms<br>64 bytes from 
+      1000000000[6]2: icmp_seq=1 ttl=64 time=0.366 ms<br>--- 1000000000[6]2 ping 
+      statistics ---<br>2 packets transmitted, 2 packets received, 0% packet 
+      loss</span></div></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left"><span class="STYLE14">D.使用ipv9的ftp来从ftp服务器获取文件<br>运行sudo 
+      /root/v9cmd/ftp 1000000000[6]2<br>ftp用户名 anonymous<br>密码 
+      任意类型邮件格式,譬如1@2<br>登陆成功后运行ls 查看目录<br>运行cd pub切换目录<br>运行ls查看pub下的文件<br>运行get 
+      test获取ftp服务器上的文件<br>运行quit退出<br>运行ls查看获取到的文件test<br>运行cat 
+      test查看获取到的文件内容<br>以下是一个获取过程<br>[test1@localhost test1]$ sudo 
+      /root/v9cmd/ftp 1000000000[6]2<br>Trying 1000000000[6]2.21...<br>Connected 
+      to 1000000000[6]2.<br>220 localhost.localdomain FTP server (Version 6.00) 
+      ready.<br>Name (1000000000[6]2:test1): anonymous<br>331 Guest login ok, 
+      send your e-mail address (user@host) as password.<br>Password:<br>230 
+      Guest login ok, access restrictions apply.<br>Remote system type is 
+      UNIX.<br>Using binary mode to transfer files.<br>ftp ls<br>200 EPRT 
+      command successful.<br>150 Opening ASCII mode data connection for 
+      '/bin/ls'.<br>total 16<br>d--x--x--x 2 root root 4096 Nov 12 2008 
+      bin<br>d--x--x--x 2 root root 4096 Nov 12 2008 etc<br>drwxr-xr-x 2 root 
+      root 4096 Nov 12 2008 lib<br>drwxr-xr-x 2 root root 4096 Jul 21 09:47 
+      pub<br>226 Transfer complete.<br>ftp cd pub<br>250 CWD command 
+      successful.<br>ftp ls<br>200 EPRT command successful.<br>150 Opening ASCII 
+      mode data connection for '/bin/ls'.<br>total 4<br>-rw-r--r-- 1 root root 
+      12 Jul 21 09:47 test<br>226 Transfer complete.<br>ftp get test<br>local: 
+      test remote: test<br>200 EPRT command successful.<br>150 Opening BINARY 
+      mode data connection for 'test' (12 bytes).<br>226 Transfer 
+      complete.<br>12 bytes received in 0.0118 seconds (1020 bytes/s)<br>ftp 
+      quit<br>221 Goodbye.<br>[test1@localhost test1]$ 
+      ls<br>test<br>[test1@localhost test1]$ cat test<br>just a 
+    test</span></div></th></tr>
+  <tr>
+    <th scope="col">
+      <div align="left">
+      <p class="STYLE14">E.IPv9 http</p>
+      <p class="STYLE14">双击桌面的firefox快捷方式，弹出firefox浏览器<br>在地址栏输入:http://1000000000[6]1:8000/<br>便可通过IPV9协议访问HTTP。</p></div></th></tr></tbody></table>
+<p>&nbsp;</p>
+<p class="STYLE10" align="left">&nbsp;</p>
+<p class="STYLE11" align="center"><a href="javascript:window.close()">[关闭窗口]</a> 
+</p>
+</body></html>

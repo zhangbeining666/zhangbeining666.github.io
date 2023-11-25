@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>请输入访问码</h1>
+    <form onsubmit="return validatePassword()">
+        <label for="password">请输入你的访问码：</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="提交">
+    </form>
+
+    <script>
+        function validatePassword() {
+            var input = document.getElementById("password").value;
+            var allowedPassword = "zbnzqzs";
+
+            if (input === allowedPassword) {
+                window.location.href = "https://zhangbeining666.github.io/grzyk159026.html";
+                return false; // Prevent the form from actually submitting
+            } else {
+                window.location.href = "https://zhangbeining666.github.io/wqfw.html";
+                return false; // Prevent the form from actually submitting
+            }
+        }
+    </script>
+</body>
+</html>
